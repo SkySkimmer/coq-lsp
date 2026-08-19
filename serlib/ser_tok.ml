@@ -24,6 +24,11 @@ type t =
   [%import: Tok.t]
   [@@deriving sexp]
 
+type ('a,'b) exact = ('a, 'b) Tok.exact =
+  | Any : ('a,'a) exact
+  | Exact : 'a -> ('a,unit) exact
+[@@deriving sexp_of]
+
 type 'c p =
   [%import: 'c Tok.p]
   [@@deriving sexp_of]
