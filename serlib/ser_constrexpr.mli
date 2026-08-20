@@ -71,6 +71,9 @@ val sexp_of_binder_kind : binder_kind -> Sexp.t
 type delimiter_depth = [%import: Constrexpr.delimiter_depth]
   [@@deriving sexp,yojson,hash,compare]
 
+type scope_delimiter = [%import: Constrexpr.scope_delimiter]
+  [@@deriving sexp,yojson,hash,compare]
+
 type prim_token = Constrexpr.prim_token
 
 val prim_token_of_sexp : Sexp.t -> prim_token

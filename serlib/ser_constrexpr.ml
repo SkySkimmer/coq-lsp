@@ -171,6 +171,9 @@ type explicit_flag = [%import: Constrexpr.explicit_flag]
 type delimiter_depth = [%import: Constrexpr.delimiter_depth]
   [@@deriving sexp,yojson,hash,compare]
 
+type scope_delimiter = [%import: Constrexpr.scope_delimiter]
+  [@@deriving sexp,yojson,hash,compare]
+
 type prim_token = [%import: Constrexpr.prim_token]
   [@@deriving sexp,yojson,hash,compare]
 
