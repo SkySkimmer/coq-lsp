@@ -80,7 +80,7 @@ index e86e9decb1..b3e2d070c9 100644
 +  (names jscoq_extern)
 +  (flags :standard (:include %{project_root}/config/dune.c_flags)))
   (libraries
-   rocq-runtime.boot rocq-runtime.clib rocq-runtime.config
+   rocq-runtime.boot rocq-runtime.clib rocq-runtime.config findlib
    (select instr.ml from
 diff --git a/lib/jscoq_extern.c b/lib/jscoq_extern.c
 new file mode 100644
