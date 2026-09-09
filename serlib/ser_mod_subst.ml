@@ -18,15 +18,6 @@
 
 module Names = Ser_names
 
-module OD = struct
-  type t = Mod_subst.delta_resolver
-  let name = "Mod_subst.delta_resolver"
-end
-
-module A_ = SerType.Opaque(OD)
-type delta_resolver = A_.t
- [@@deriving sexp,yojson,hash,compare]
-
 module OS = struct
   type t = Mod_subst.substitution
   let name = "Mod_subst.substitution"
