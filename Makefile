@@ -238,7 +238,7 @@ ifndef VENDORED_SETUP
 endif
 	cd $(COQ_SRC_DIR) && git apply $(PATCH_DIR)/0001-jscoq-Interrupt-and-timeout-Rocq-patch.patch
 	cd $(COQ_SRC_DIR) && git apply $(PATCH_DIR)/0001-jscoq-lib-system.ml-de-unix-stat.patch
-	cd $(COQ_SRC_DIR) && git apply $(PATCH_DIR)/0001-engine-trampoline.patch
+#	cd $(COQ_SRC_DIR) && git apply $(PATCH_DIR)/0001-engine-trampoline.patch
 ifndef VENDORED_SETUP
 	opam pin add $(COQ_CORE_NAME).$(COQ_CORE_VERSION) -k path $(COQ_SRC_DIR) -y
 endif
